@@ -13,4 +13,7 @@ Este repositório contém alguns scripts (organizados em pastas) referentes aos 
 
 ### Projetos
 
+Nome | Link
+---- | -------
+Soma das Medias (LEDs) |https://www.tinkercad.com/things/eEuerb9ZD07-soma-das-medias-leds
 
