@@ -16,4 +16,5 @@ Este repositório contém alguns scripts (organizados em pastas) referentes aos 
 Nome | Link
 ---- | -------
 Soma das Medias (LEDs) |https://www.tinkercad.com/things/eEuerb9ZD07-soma-das-medias-leds
+Sensor de Temperatura |  https://www.tinkercad.com/things/8qdKwn75Ea7-sensor-de-temperatura-
 
