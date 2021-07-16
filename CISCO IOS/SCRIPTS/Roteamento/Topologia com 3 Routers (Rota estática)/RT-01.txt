@@ -1,0 +1,20 @@
+!Rota direta REDE 2 (WAN 1)
+ip route 172.16.0.0 255.255.0.0 190.140.0.2
+
+!Rota direta REDE 3 (WAN 2)
+ip route 10.0.0.0 255.0.0.0 190.140.1.2
+
+!Rota indireta REDE 2 (WAN 2)
+ip route 172.16.0.0 255.255.0.0 190.140.1.2
+ip route 190.140.2.0 255.255.255.252 190.140.1.2
+
+!Rota indireta REDE 3 (WAN 1)
+ip route 10.0.0.0 255.0.0.0 190.140.0.2
+ip route 190.140.2.0 255.255.255.252 190.140.0.2
+
+
+
+
+
+
+
