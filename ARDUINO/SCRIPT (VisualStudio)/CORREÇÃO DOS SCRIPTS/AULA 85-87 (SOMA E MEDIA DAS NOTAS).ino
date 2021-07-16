@@ -1,7 +1,5 @@
 /*
 
-Nome do desenvolvedor: Lucas Cabral
-Versão: 0.1
 Data de criação: 20/01/2021
 Última manutenção: 20/01/2021
 
