@@ -1,11 +1,9 @@
 /*
-Nome do desenvolvedor: Lucas Cabral
-Versão: 0.1
+
 Data de criação: 19/01/2021
 Última manutenção: 19/01/2021
 
-Este programa realiza: desenvolvido para efetuar a leitura de uma variável 'temperatura', verificando o valor contido nela, piscando assim
-um dos leds.
+Leitura da Variável "TEMPERATURA"
 LED VERDE - Temperatura menor ou igual a 25º
 LED AMARELO - Temperatura maior que 25°C E menor ou igual a 70°C
 LED VERMELHO - Temperatura maior que 70°C
