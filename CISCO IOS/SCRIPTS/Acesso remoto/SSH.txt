@@ -1,9 +1,11 @@
 ﻿!Nome do host
+ 
 en
 conf t
 hostname RT-01
 
 !Endereço IP
+
 int g0/0
 ip address 172.16.0.1 255.255.0.0
 no shutdown
@@ -19,6 +21,7 @@ crypto key generate rsa general-key modulus 1024
 username suporte privilege 15 secret suporte@123
 
 !Configuração nas linhas VTY
+
 line vty 0 15
 transport input ssh
 login local
