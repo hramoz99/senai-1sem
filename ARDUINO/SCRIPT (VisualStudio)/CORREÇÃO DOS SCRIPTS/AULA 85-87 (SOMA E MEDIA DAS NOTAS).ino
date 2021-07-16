@@ -3,16 +3,14 @@
 Data de criação: 20/01/2021
 Última manutenção: 20/01/2021
 
-Este programa realiza: efetua o cálculo da média de duas notas. É validado se o aluno está Aprovado (caso a nota seja maior ou igual 5) 
-ou se está Reprovado (caso a nota seja menor que 5). Se o aluno for Aprovado, um LED VERDE irá piscar, exibindo uma mensagem no Monitor
-Serial ("Você foi aprovado!"). Caso o aluno seja Reprovado, um LED VERMELHO irá piscar, exibindo uma mensagem no Monitor Serial
-("Você foi reprovado!"). 
-Obs: Nota <5 e >=7 irá piscar um LED AMARELO, na qual o aluno ficará de recuperação.
+Cálculo da Média
+O aluno aprovado tem a nota maior que 5. Então, o LED verde pisca exibindo uma mensagem no monitor "Você foi aprovado!". 
+Caso o aluno não alcance o percentual, o led vermelho piscará exibindo uma mensagem no monitor "Você foi reprovado!".
+
+Obs: Nota <5 e >7 o led amarelo irá piscar, onde o aluno se encontra em recuperação
 
 */
-
-
-float n1,n2,soma,media; //Declara as variáveis utilizadas no programa
+float n1,n2,soma,media; //Declarar as variáveis utilizadas no programa
 
 void setup(){
 	
