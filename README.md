@@ -6,7 +6,7 @@ Este repositório contém alguns scripts (organizados em pastas) referentes aos 
 
 ### Objetivos
 
-- Códigod do Cisco IOS
+- Código da CIsco IOS
 -  Linguagem C++ (Arduino)
 -  Scripts
 - tinkercad
