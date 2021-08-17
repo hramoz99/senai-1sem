@@ -158,9 +158,6 @@ Liberar as vlans na interface trunk
 (config)#interface <nome-da-interface>
 (config-if)#switchport trunk allowed vlan <lista de vlans separadas por VÍRGULAS>
        
-Configurar ip sem switch
-(config)#interface vlan 90
-(config-if)#ip address <endereço> <máscara>
 
 
 RESETAR O ROUTER E O SWITCH
