@@ -4,7 +4,7 @@ Data de criação: 22/01/2021
 Última manutenção: 23/01/2021
 
 Leitura da variável 'temperatura'.
-LED VERDE - Temperatura menor ou igual a 25º
+LED VERDE - Temperatura menor ou igual a 25°
 LED AMARELO - Temperatura maior que 25°C E menor ou igual a 70°C
 LED VERMELHO - Temperatura maior que 70°C
 
