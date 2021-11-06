@@ -1,4 +1,4 @@
-#  Redes Senai 1sm
+#  Redes 1sem
 
 ![image](https://user-images.githubusercontent.com/78046279/124510570-7b6f4280-ddaa-11eb-83dc-4161c36bd8ec.png)
 
