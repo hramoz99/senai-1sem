@@ -1,62 +1,51 @@
-﻿!Atrelar o endereço ip a uma rota estática
-```
+﻿!ATRELAR O ENDEREÇO IP A UMA ROTA ESTÁTICA
 en
 conf t
 int s0/0/0
 ip add 200.100.0.1 255.255.255.252
 no shutdown
 exit
-```
 
-!Rota de roteamento
-```
+
+!ROTA DE ROTEAMENTO
 ip route 172.16.0.0 255.255.0.0 200.100.0.2
-```
 
-!Rota padrão de roteamento
-```
+
+!ROTA PADRÃO DE ROTEAMENTO
 ip route 0.0.0.0 0.0.0.0 150.200.0.2
 end
-```
 
-!Salvar as configurações
-```
+
+!SALVAR AS CONFIGURAÇÕES
 wr
-```
+
 
 **(IPv4)**
-```
 !Nome do Router
 en
 conf t
 hostname RT-02
-```
 
-!Habilitar o router para ipv6
-```
+
+!HABILITAR O ROUTER PARA IPv6
 ipv6 unicast-routing
-```
 
-!Atrelar o endereço IPv6 a uma interface GigabitEthernet
-```
+
+!ATRELAR O ENDEREÇO IPv6 A UMA INTERFACE GIGABITETHERNET
 int g0/0
 ipv6 add 2001:db8:faca:1::1/64
 ipv6 add fe80::1 link-local
 no shutdown
-```
 
-!Atrelar o endereço ip a uma rota estática
-```
+
+!ATRELAR O ENDEREÇO IP A UMA ROTA ESTÁTICA 
 int s0/0/0
 ipv6 add 2001:db8:faca:2::2/64
 no shutdown
 exit
-```
 
-!Rota de roteamento
-```
+
+!ROTA DE ROTEAMENTO
 ipv6 route 2001:db8:faca:0::/64 2001:db8:faca:2::1
-```
 
-**(IPv6)**
 
