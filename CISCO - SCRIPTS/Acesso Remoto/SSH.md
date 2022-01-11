@@ -1,44 +1,56 @@
-﻿!Nome do host
+#### NOME DO HOST
+```
 en
 conf t
 hostname RT-01
+```
 
 
-!Endereço IP
+#### ENDEREÇO IP
+```
 int g0/0
 ip address 172.16.0.1 255.255.0.0
 no shutdown
 exit
+```
 
-
-!Nome de domínio
+#### NOMDE DE DOMÍNIO 
+```
 ip domain-name aula41.local
+```
 
-
-!Chave de criptografia
+#### CHAVE DE CRIPTOGRAFIA 
+```
 crypto key generate rsa general-key modulus 1024
+```
 
-
-!Nome do usuário local
+#### NOME DO USUÁRIO LOCAL
+```
 username suporte privilege 15 secret suporte@123
+```
 
-
-!Configuração nas linhas VTY
+#### CONFIGURAÇÃO NAS LINHAS VTY 
+```
 line vty 0 15
 transport input ssh
 login local
 exit
+```
 
-
-!Senha de Enable Secret
+#### SENHA DA ENABLE SECRET 
+```
 enable secret SenhaSecreta
+```
 
 
-!Salvar as configurações - Tela de enable
+#### Salvar as configurações - Tela de enable
+```
 end
 wr
+```
 
 **OBS: Acessar SSH no prompt de comando**
+
 
 C:\ssh -l [nome-do-usuário] [endereço-ip]
 Para ter acesso remoto, é necessário uma senha de enable
