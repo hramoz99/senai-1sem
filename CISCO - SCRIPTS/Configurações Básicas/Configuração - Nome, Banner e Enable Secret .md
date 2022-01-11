@@ -1,0 +1,21 @@
+!Nome do host
+en
+conf t
+hostname S2
+
+
+!Senhas (login e enable secret)
+line console 0
+password cisco
+login
+exit
+enable secret class
+service password-encryption
+
+
+!Banner
+banner motd "Somente Acesso Autorizado. Infratores sofrerão as consequências da lei."
+
+
+!Salvar as configurações - Tela de enable
+wr
