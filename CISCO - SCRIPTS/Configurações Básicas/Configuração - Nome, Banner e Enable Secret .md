@@ -1,21 +1,27 @@
-!Nome do host
+#### NOME DO HOST
+```
 en
 conf t
 hostname S2
+```
 
 
-!Senhas (login e enable secret)
+#### SENHAS DE LOGIN E ENABLE SECRET 
+```
 line console 0
 password cisco
 login
 exit
 enable secret class
 service password-encryption
+```
 
+#### BANNER
+```
+banner motd "Somente Acesso Autorizado. Infratores sofrerÃ£o as consequÃªncias da lei."
+```
 
-!Banner
-banner motd "Somente Acesso Autorizado. Infratores sofrerão as consequências da lei."
-
-
-!Salvar as configurações - Tela de enable
+#### SALVAR AS CONFIGURAÃ‡Ã•ES 
+```
 wr
+```
