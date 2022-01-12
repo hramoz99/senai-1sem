@@ -1,6 +1,5 @@
-# Comandos cisco
+# COMANDOS CISCOS
 
-### CONFIGURAÇÕES INICIAIS 
 
 #### ENTRA EM MODO EXEC PRIVILEGIADO 
 ```
@@ -104,9 +103,10 @@ Colocar "no" na frente do comando
 (config)#description <descricao>
 ```
 
-#### CONFIGURAR O SSH NAS VTY
+## CONFIGURAR O SSH NAS VTY
+
+#### DEFINIR NOME DE DOMÍNIO
 ```
-!Definir o nome do domínio
 (config)#ip domain-name <nome-do-domínio>
 ```
 
@@ -281,7 +281,7 @@ C:/ ssh -l [endereço-ip]
 ```
 
 
-### RESETAR O ROUTER E O SWITCH
+## RESETAR O ROUTER E O SWITCH
 
 #### Resetar o Switch
 	
