@@ -43,7 +43,7 @@ enable secret SenhaSecreta
 ```
 
 
-#### Salvar as configurações - Tela de enable
+#### SALVAR CONFIGURAÇÕES - TELA ENABLE
 ```
 end
 wr
