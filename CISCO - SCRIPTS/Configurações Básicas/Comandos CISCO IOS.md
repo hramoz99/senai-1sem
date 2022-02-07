@@ -1,280 +1,280 @@
 # COMANDOS CISCOS
 
 
-#### ENTRA EM MODO EXEC PRIVILEGIADO 
+#### Entrar em modo PRIVILEGIADO 
 ```
 >enable
 ```
 
-#### TELA DE CONFIGURAÇÃO DO EQUIPAMENTO 
+#### Tela de confguração do equipamento
 ```
 #configure terminal
 ```
 
-#### MOSTRAR AS CONFIGURAÇÕES QUE ESTÃO SALVAS NO EQUIPAMENTO
+#### Mostrar as configurações que estão salvas
 ```
 #show startup-config
 ```
 
-#### VER O RESUMO DAS INTERFACES 
+#### Ver o resumo das interfaces 
 ```
 #show ip interface brief
 ```
 
-#### TROCAR O NOME DO EQUIPAMENTO
+#### Trocar o nome do equipamento
 ```
 (config)#hostname <nome>
 ```
 
-#### CONFIGURAR UM BANNER 
+#### Configurar o Banner
 ```
 (config)#banner motd "<texto>"
 ```
 
-#### DESTRAVAR O TERMINAL 
+#### Destravar o terminal 
 ```
 Ctrl+Shift+6
 ```
 
-#### CONFIGURAR SENHA DA CONSOLE
+#### Configurar senha da console 
 ```
 (config)#line console 0
 (config-line)#password <senha>
 (config-line)#login
 ```
 
-#### CONFIGURAR SENHA 
+#### Configurar Senha Secret
 ```
 (config)#enable secret <senha>
 ```
 
-#### VERIFICAR AS CONFIGURAÇÕES NO EQUIPAMENTO
+#### Verificar as configurações
 ```
 #show running-config
 ```
 
-#### ATIVAR O SERVIÇO DE CRIPTOGRAFIA 
+#### Ativar o serviço de criptografia 
 ```
 (config)#service password-encryption
 ```
 
-#### IOS DESFAZER CONFIGURAÇÃO NO IOS
+#### Desfazer configurações no IOS
 ```
 Colocar "no" na frente do comando
 ```
 
-#### DESATIVAR UMA INTERFACE
+#### Desativar uma interface
 ```
 (config)#interface <nome>
 (config-if)#shutdown
 ```
  
-#### DESATIVAR VÁRIAS INTERFACES DE UMA VEZ 
+#### Desativar múltiplas interfaces simultaneamente 
 ```
 (config)#interface range <intervalo>
 (config-if-range)#shutdown
 ```
 
-#### VER RESUMO DAS INTERFACES 
+#### Ver resumo das interfaces  
 ```
 #show ip interface brief
 ```
 
-#### SALVAR AS CONFIGURAÇÕES 
+#### Salvar as configurações
 ```
 #wr
 ```
 
-#### RESETAR EQUIPAMENTO 
+#### Resetar o equipamento
 ```
 #write erase
 ```
 
-#### COLOCAR IP EM UMA INTERFACE 
+#### Colocar IP em uma interface _
 ```
 (config)#interface <nome>
 (config-if)#ip address <ip> <mascara>
 (config-if)#no shutdown
 ```
 
-#### COLOCAR DESCRIÇÃO EM UMA INTERFACE 
+#### Colocar descrição em uma interface
 ```
 (config)#interface <nome>
 (config)#description <descricao>
 ```
 
-## CONFIGURAR O SSH NAS VTY
+## Configurar Acesso SSH nas VTY
 
-#### DEFINIR NOME DE DOMÍNIO
+#### Definir o nome de Domínio 
 ```
 (config)#ip domain-name <nome-do-domínio>
 ```
 
-#### GERAR A CHAVE DE CRIPTOGRAFIA 
+#### Gerar chave de Criptografia   
 ```
 (config)#crypto key generate rsa general-keys modulus <nº-de-bits-da-chave>
 ```
 
-#### CRIAR USUÁRIO NO DISPOSITIVO 
+#### Criar usuário no dispositivo 
 ```
 (config)#username <nome-do-usuário> privilege <1-15> secret <senha>
 ```
 
-#### ATIVAR O SSH NAS LINHAS DE VTY 
+#### Ativar o SSH nas linhas de VTY 
 ```
 (config)#line vty 0 15
 (config-line)#transport input ssh
 (config-line)#login local
 ```
 
-#### CONFIGURAR A VTY PARA USAR TELNET
+#### Configurar a VTY para utilizar Telnet
 ```
 (config)#line vty 0 15
 (config-line)#password <senha>
 (config-line)#login
 ```
 
-#### ATIVAR LOGIN CONSOLE 
+#### Ativar login na CONSOLE
 ```
 (config)#line console 0
 (config-line)#login local
 ```
 
-#### VER ARQUIVOS NA MEMÓRIA FLASH
+#### Ver arquivos na memória FLASH
 ```
 #dir flash
 ```
 
-#### VER ARQUIVOS NA MEMÓRIA NVRAM
+#### Ver arquivos na memória NVRAM
 ```
 #dir nvram
 ```
 
-#### MOSTRAR AS CONFIGURAÇÕES QUE ESTÃO ATIVAS NO EQUIPAMENTO 
+#### Mostrar as configurações que estão ativas                
 ```
 #show run
 ```
 
-#### MOSTRAR AS CONFIGURAÇÕES QUE ESTÃO SALVAS NO EQUIPAMENTO
+#### Mostrar as configurações que estão salvas               
 ```
 #show startup-config
 ```
 
-#### MOSTRAR RESUMO DAS INTERFACES DO EQUIPAMENTO 
+#### Mostrar o resumo das interfaces 
 ```
 #show ip interface brief (IPv4)
 #show ipv6 interface brief (IPv6)
 ```
 
-#### MOSTRAR A TABELA MAC DO SWITCH 
+#### Mostrar a tabela Mac do SWITCH
 ```
 #show mac-address-table (IOS 12.2)
 #show mac address-table dynamic (IOS 15.0)
 ```
 
-#### EXIBIR A TABELA DE ROTEAMENTO 
+#### Exibir a tabela de Roteamento
 ```
 #show ip route
 ```
 
-#### EXIBIR UM RESUMO DAS VLANS PRESENTES NO DISPOSITIVO E AS INTERFACES ATRELADAS NAS VLANS 
+#### Exibir um resumo das VLANS e interfaces atreladas 
 ```
 #show vlan brief
 ```
 
-#### EXIBIR INFORMAÇÕES SOBRE UMA VLAN ESPECÍFICA 
+#### Exibir informações sobre uma VLAN específica
 ```
 #show vlan id [id-da-vlan] ou show vlan name [nome-da-vlan]
 ```
 
-#### EXIBIR INFORMAÇÕES RELACIONADAS A VLAN EM UMA INTERFACE ESPECÍFICA
+#### Exibir informações relacioandas a VLAN em uma interface específica
 ```
 #show interface [id-da-interface] switchport
 ```
 
-#### ACESSO REMOTO
+#### Acesso Remoto - SSH
 ```
 C:/ ssh -l [endereço-ip]
 ```
 
-#### DESATIVAR PAGINAÇÃO (--MORE--)
+#### Desativar Paginação (--MORE--)
 ```	
 #terminal length 0
 ```
 
-#### DESATIVAR AS MENSAGENS DE ERRO NA TELA 
+#### Desativar as mensagens de ERRO na tela 
 ```	
 (config)#no logging console
 ```
 
-### CONFIGURAÇÕES EXCLUSIVAS PARA O ROTEADOR
+### Configurações EXCLUSIVAS para Roteador  
 
-#### VISUALIZAR TABELA DE ROTEAMENTO 
+#### Visualizar tabela de roteamento 
 ```
 #show ip route
 ```
 
-#### CONFIGURAR SUBINTERFACE - SEM ROTEADOR 
+#### Configurar Sub-Interface             
 ```
 (config)#interface <nome-da-subinterface-com-a-vlan>
 (config-subif)#encapsulation dot1q <nº-da-vlan>
 (config-subif)#ip address <ip> <máscara>
 ```
 
-#### ATIVAR ROTEAMENTO IPv6
+#### Ativar Roteamento IPv6
 ```
 (config)#ipv6 unicast-routing
 ```
-#### INSERIR IPv6 A UMA INTERFACE 
+#### Inserir IPv6 a uma interface 
 ```
 (config)#interface <nome-da-interface>
 (config-if)#ipv6 address <endereço>/<prefixo>
 ```
 
-#### ROTA ESTÁTICA 
+#### Rota Estática
 ```
 (config)#ip route <id-da-rede-de-destino> <máscara-da-rede> <ip-do-roteador-que conhece-a-rede>
 ```
 
-### CONFIGURAÇÕES EXCLUSIVAS PARA O SWITCH
+### Configurações EXCLUSIVAS para o Switch
 
-#### CRIAR UMA VLAN 
+#### Criar uma VLAN
 ```
 (config)#vlan <nº-da-vlan>
 (config-vlan)#name <nome-da-vlan>
 ```
 
-#### ATRELAR UMA INTERFACE A UMA VLAN 
+#### Atrelar uma interface a uma VLAN 
 ```
 (config)#interface <nome-da-interface>
 (config-if)#switchport mode access
 (config-if)#switchport access vlan 10
 ```
 
-#### VERIFICAR AS CONFIGURAÇÕES DA VLAN
+#### Verificar as configurações da VLAN
 ```
 #show vlan brief
 ```
 
-#### CONFIGURAR UMA INTERFACE PARA MODO TRUNK 
+#### Configurar uma interface para MODO TRUNK 
 ```
 (config)#interface <nome-da-interface>
 (config-if)#switchport mode trunk
 ```
 
-#### CONFFIGURAR VLAN NATIVA NA INTERFACE TRUNK 
+#### Configurar a VLAN Nativa na interface TRUNK
 ```	
 (config)#interface <nome-da-interface>
 (config-if)#switchport trunk native vlan <nº-da-vlan-nativa>
 ```
 
-#### LIBERAR AS VLANS NA INTERFACE TRUNK 
+#### Liberar as VLANS na interface TRUNK 
 ```
 (config)#interface <nome-da-interface>
 (config-if)#switchport trunk allowed vlan <lista de vlans separadas por VÍRGULAS>
 ```
        
-#### CONFIGURAR IP - SEM SWITCH
+#### Configurar IP - SEM SWITCH
 ```
 (config)#interface vlan 90
 (config-if)#ip address <endereço> <máscara>
