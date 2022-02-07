@@ -31,7 +31,7 @@ crypto key generate rsa general-key modulus 1024
 username suporte privilege 15 secret suporte@123
 ```
 
-#### Configuração nas linhas TTY 
+#### Configuração nas linhas VTY 
 ```
 line vty 0 15
 transport input ssh
