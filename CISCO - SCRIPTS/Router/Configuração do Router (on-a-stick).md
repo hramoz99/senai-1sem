@@ -1,4 +1,6 @@
-#### NOME DO HOST, ENABLE SECRET, BANNER
+# Roteador 
+
+#### Nome do Host, Enable Secret, Banner
 ```
 en
 conf t
@@ -12,22 +14,22 @@ service password-encryption
 banner motd "ACESSO AUTORIZADO APENAS PARA O DEPARTAMENTO DE TI DA COLONIA MARCIANA!"
 ```
 
-#### USUÁRIO E SENHA LOCAL
+#### Usuário e Senha Local
 ```
 username suporte-marte privilege 15 secret suporte@123
 ```
 
-#### NOME DE DOMÍNIO 
+#### Nome de Domínio
 ```
 ip domain-name coloniamarciana.local
 ```
 
-#### CHAVE DE CRIPTOGRAFIA
+#### Chave de Criptografia 
 ```
 crypto key generate rsa general-key modulus 1024
 ```
 
-#### LINHAS VTY E CONSOLE
+#### Linhas VTY e Console
 ```
 line vty 0 15
 transport input SSH
@@ -37,14 +39,14 @@ login local
 end
 ```
 
-#### ATIVAR INTERFACE
+#### Ativar Interface
 ```
 conf t
 int g0/0
 no shutdown
 ```
 
-#### ATRELAR O ENDEREÇO A UMA SUBINTERFACE - IPv4
+#### Atrelar o endereço a uma sub-interface - IPv4
 ```
 int g0/0.10
 encapsulation dot1q 10
@@ -78,13 +80,13 @@ no shutdown
 end
 ```
 
-#### ROTA PADRÃO DE ROTEAMENTO 
+#### Rota Padrão de roteamento
 ```
 conf t
 ip route 0.0.0.0 0.0.0.0 200.100.0.2
 ```
 
-#### ATRELAR  O ENDEREÇO IP A UMA SUBINTERFACE - IPv6
+#### Atrelar o endereço Ip a um sub-interface - IPv6
 ```
 ipv6 unicast-routing
 int g0/0.10
@@ -127,13 +129,13 @@ no shutdown
 end
 ```
 
-#### ROTA PADRÃO DE ROTEAMENTO
+#### Rota Padrão de roteamento
 ```
 conf t
 ipv6 route ::/0 2000:200:100::2
 ```
 
-#### SALVAR AS CONFIGURAÇÕES
+#### Salvar as configurações
 ```
 wr
 ```
