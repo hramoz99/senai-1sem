@@ -1,6 +1,6 @@
 # Switch 
 
-#### Nome do host, enable Secret, Banner
+#### Nome do Host, Enable Secret, Banner
  ```
 en
 conf t
