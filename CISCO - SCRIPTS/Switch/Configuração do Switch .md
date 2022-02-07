@@ -1,4 +1,6 @@
-#### NOME DO HOST, ENABLE SECRET, BANNER
+# Switch 
+
+#### Nome do host, enable Secret, Banner
  ```
 en
 conf t
@@ -12,21 +14,21 @@ service password-encryption
 banner motd "ACESSO AUTORIZADO APENAS PARA O DEPARTAMENTO DE TI DA COLONIA MARCIANA!"
 ```
 
-#### USUÁRIO E SENHA LOCAL
+#### Usuário e senha LOCAL
 ```
 username suporte-marte privilege 15 secret suporte@123
 ```
 
-#### NOMDE DE DOMÍNIO
+#### Nome de DOMÍNIO
 ```
 ip domain-name coloniamarciana.local
 ```
 
-#### CHAVE DE CRIPTOGRAFIA 
+#### Chave de Criptografia
 ```
 crypto key generate rsa general-key modulus 1024
 ```
-#### LINHAS VTY E CONSOLE
+#### Linhas  VTY e Console 
 ```
 line vty 0 15
 transport input SSH
@@ -36,7 +38,7 @@ login local
 end
 ```
 
-#### CRIAÇÃO DE VLANS
+#### Criação de VLANS
 ```
 conf t
 vlan 50
@@ -46,7 +48,7 @@ name GERENCIAMENTO
 exit
 ```
 
-#### ATRELAS AS VLANS A UMA INTERFACE FASTETHERNET - ACCESS
+#### Atrelar as VLANS a uma interface FASTETHERNET - ACCESS
 ```
 int range f0/1-2
 switchport mode access
@@ -57,7 +59,7 @@ switchport access vlan 60
 exit
 ```
 
-#### ATRELAS AS VLANS A UMA INTERFACE GIGAETHERNET -  TRUNK
+#### Atrelar as VLANS a uma interface GIGAETHERNET -  TRUNK
 ```
 int G0/1
 switchport mode trunk
@@ -70,7 +72,7 @@ switchport trunk allowed vlan 10,20,30,40,50,60,99
 end
 ```
 
-#### ATRELAR O ENDEREÇO IP A UMA INTERFACE - IPv4
+#### Atrelar o endereço  IP a uma interface - IPv4
 ```
 conf t
 int vlan 60
@@ -78,7 +80,7 @@ ip add 192.168.0.X 255.255.255.240
 no shutdown
 end
 ```
-#### DESATIVAR AS INTERFACES
+#### Desativarr as interfaces
 ```
 conf t
 int range f0/4-19
@@ -86,7 +88,7 @@ int g0/2
 shutdown
 end
 ```
-#### SALVAR AS CONFIGURAÇÕES 
+#### Salvar as configurações
 ```
 wr
 ```
