@@ -1,4 +1,7 @@
-#### NOME DO HOST
+
+# Configurações Básicas
+
+#### Nome do Host 
 ```
 en
 conf t
@@ -6,7 +9,7 @@ hostname S2
 ```
 
 
-#### SENHAS DE LOGIN E ENABLE SECRET 
+#### Senhas de Login e Enable Secret 
 ```
 line console 0
 password cisco
@@ -16,12 +19,12 @@ enable secret class
 service password-encryption
 ```
 
-#### BANNER
+#### Banner
 ```
 banner motd "Somente Acesso Autorizado. Infratores sofrerão as consequências da lei."
 ```
 
-#### SALVAR AS CONFIGURAÇÕES 
+#### Salvar as Configurações 
 ```
 wr
 ```
