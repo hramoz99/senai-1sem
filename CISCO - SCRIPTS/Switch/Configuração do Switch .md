@@ -74,7 +74,7 @@ end
 
 #### Atrelar o endereço  IP a uma interface - IPv4
 ```
-conf t
+configure terminal
 int vlan 60
 ip add 192.168.0.X 255.255.255.240
 no shutdown
