@@ -51,7 +51,7 @@ end
 wr
 ```
 
-**OBS: Acessar SSH no prompt de comando**
+**Acessar SSH no prompt de comando**
 > Para ter acesso remoto é necessário uma senha de enable
 
 C:\ssh -l [nome-do-usuário] [endereço-ip]
