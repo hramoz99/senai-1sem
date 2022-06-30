@@ -127,7 +127,7 @@ void Trata_serial(void){                                        //
   tempo_mov = millis();}                                        //
 //----------------------------------------------------------------
 
-//Função para configuração inicial do mcrocontrolador************
+//Função para configuração inicial do mcrocontrolador*************
 void setup(){
   pinMode(7, OUTPUT);
   digitalWrite(7, LOW);
