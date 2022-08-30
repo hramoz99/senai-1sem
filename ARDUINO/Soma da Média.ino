@@ -17,7 +17,7 @@ Obs: Nota entre 5 e 7, o aluno fica de recuperação (LED_Amarelo).
 
     pinMode(4, OUTPUT); //Definir o Pino 4 como saída [LED AMARELO]
   
-  Serial.begin(9600); //Iniciar o Monitor Serial
+  Serial.begin(9600); //Inicialização do Monitor Serial
 
 }
 
