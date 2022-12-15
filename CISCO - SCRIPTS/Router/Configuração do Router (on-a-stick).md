@@ -3,7 +3,7 @@
 #### Nome do Host, Enable Secret, Banner
 ```
 en
-conf t
+configure t
 hostname RT-01
 line console 0
 password TI*Marte2077
