@@ -3,7 +3,7 @@
 #### Nome do Host, Enable Secret, Banner
  ```
 en
-conf t
+config t
 hostname SW-X
 line console 0
 password TI*MARCIANA
